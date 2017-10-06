@@ -36,6 +36,10 @@ The multivariate linear regression method is implemented using three different a
 
 ### 2.	[Principal Component Analysis(PCA)](https://en.wikipedia.org/wiki/Principal_component_analysis)
 
-The original dataset consisted of thirteen independent variables as discussed above and one response variable. Since the dimension of data was too large, it has been trained on the data collected at noon in the year 2010. [Principal Component Regression(PCR)](https://en.wikipedia.org/wiki/Principal_component_regression) is also implemented that performs a regression analysis on the observed principal components obtained from PCA which identifies those set of parameters that captures high variability. From this analysis, seven features have shown maximum variability in the data. The parameters were Temperature, Humidity, Dew point, Wind speed, Pressure, Day, Evapotranspiration. Thus the model is limited to only these seven parameters as the remaining parameters did not affect much in the variability of the data.   
+The original dataset consisted of thirteen independent variables as discussed above and one response variable. Since the dimension of data was too large, it has been trained on the data collected at noon in the year 2010. [Principal Component Regression(PCR)](https://en.wikipedia.org/wiki/Principal_component_regression) is also implemented that performs a regression analysis on the observed principal components obtained from PCA which identifies those set of parameters that captures high variability. From this analysis, seven features have shown maximum variability in the data. The parameters were Temperature, Humidity, Dew point, Wind speed, Pressure, Day, Evapotranspiration. Thus the model is limited to only these seven parameters as the remaining parameters did not affect much in the variability of the data.
+
+### 3.	[Correlation](https://en.wikipedia.org/wiki/Correlation_and_dependence)
+
+Furthermore a correlation analysis amongst all the parameters was performed. The analysis quantifies how each forecast parameter affects each other and the solar intensity. We found that relative humidity and rainfall are highly correlated with each other and with solar intensity, while temperature, dewpoint, and wind speed are only partially correlated with each other and with solar intensity.
 
 
